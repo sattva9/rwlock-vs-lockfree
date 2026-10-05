@@ -1,0 +1,14 @@
+[package]
+name = "rwlock-vs-lockfree"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "bench"
+path = "src/bench.rs"
+
+[dependencies]
+crossbeam-epoch = "0.9.21"
+parking_lot = "0.12.5"
+rand = "0.10.3"
+tokio = { version = "1.53.2", features = ["full"] }
